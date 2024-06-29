@@ -23,6 +23,10 @@ This is a Social Media Client and features:
 ### Status:
 [![Deploy static content to Pages](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/pages.yml/badge.svg?branch=master)](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/pages.yml)
 
+[![Unit Test](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/unit-Test.yml/badge.svg?branch=workflow)](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/unit-test.yml)
+
+[![E2E Test](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/e2e-test.yml/badge.svg?branch=workflow)](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/e2e-test.yml)
+
 
 ## Configured with:
 
