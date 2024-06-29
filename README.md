@@ -19,7 +19,7 @@ This is a Social Media Client and features:
 ## Statuses:
 
 ### Status:
-
+[![Deploy static content to Pages](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/pages.yml/badge.svg?branch=master)](https://github.com/jonhenrikaavitsland/social-media-client/actions/workflows/pages.yml)
 
 
 ## Configured with:
