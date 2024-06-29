@@ -1,9 +1,16 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true,
+    "jest": true,
+    "cypress/globals": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:cypress/recommended"
+  ],
   "overrides": [
     {
       "files": ["**/*.test.js"],
@@ -11,6 +18,16 @@
       "plugins": ["jest"],
       "extends": ["plugin:jest/recommended"],
       "rules": { "jest/prefer-expect-assertions": "off" }
+    },
+    {
+      "files": ["**/*.cy.js"],
+      "env": { "cypress/globals": true },
+      "plugins": ["cypress"],
+      "extends": ["plugin:cypress/recommended"],
+      "rules": {
+        "cypress/no-unnecessary-waiting": "off",
+        "no-unused-vars": "off"
+      }
     }
   ],
   "parserOptions": {
