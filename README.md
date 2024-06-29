@@ -1,5 +1,7 @@
 # SOCIAL MEDIA CLIENT
 
+![image](./assets/img/screenshot.jpg)
+
 ## Description
 
 This is a Social Media Client and features:
