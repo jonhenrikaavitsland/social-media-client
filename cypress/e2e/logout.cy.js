@@ -1,5 +1,8 @@
 describe("logout function", () => {
   it("should log the user out when clicking the logout button", () => {
+    cy.intercept("POST", "https://nf-api.onrender.com/api/v1*", {
+      status: 200,
+    });
     cy.visit("/");
     cy.wait(500);
     cy.get(`[data-cy="loginFormBtn"]`).click();
