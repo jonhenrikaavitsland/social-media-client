@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("interceptRequest", (statusCode) => {
+  cy.intercept("POST", "https://nf-api.onrender.com/api/v1*", {
+    status: statusCode,
+  });
+});
