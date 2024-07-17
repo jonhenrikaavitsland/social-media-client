@@ -9,9 +9,7 @@ describe("login form", () => {
   });
 
   it("should log in with valid credentials", () => {
-    cy.intercept("POST", "https://nf-api.onrender.com/api/v1*", {
-      status: 200,
-    });
+    cy.interceptRequest(200);
     cy.get(`[data-cy="loginFormBtn"]`).click();
     cy.wait(500);
     cy.get(`[data-cy="emailInput"]`).click();
@@ -35,9 +33,7 @@ describe("login form", () => {
   });
 
   it("should not submit the login form when provided with invalid credentials and user is shown a message", () => {
-    cy.intercept("POST", "https://nf-api.onrender.com/api/v1*", {
-      status: 401,
-    });
+    cy.interceptRequest(401);
     cy.get(`[data-cy="loginFormBtn"]`).click();
     cy.wait(500);
     cy.get(`[data-cy="emailInput"]`).click();
