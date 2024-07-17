@@ -1,8 +1,7 @@
 describe("logout function", () => {
   it("should log the user out when clicking the logout button", () => {
     cy.interceptRequest(200);
-    cy.visit("/");
-    cy.wait(500);
+    cy.visitPage();
     cy.get(`[data-cy="loginFormBtn"]`).click();
     cy.wait(500);
     cy.get(`[data-cy="emailInput"]`).click();

@@ -4,8 +4,7 @@ import { apiUrl } from "../../src/js/api/constants";
 
 describe("login form", () => {
   beforeEach(() => {
-    cy.visit("/");
-    cy.wait(500);
+    cy.visitPage();
   });
 
   it("should log in with valid credentials", () => {
