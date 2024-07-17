@@ -29,3 +29,8 @@ Cypress.Commands.add("interceptRequest", (statusCode) => {
     status: statusCode,
   });
 });
+
+Cypress.Commands.add("visitPage", () => {
+  cy.visit("/");
+  cy.wait(500);
+});
