@@ -52,7 +52,16 @@ npm install
 
 ### Running
 
-To run the app, run the following commands:
+To run the app, run the following command:
 
 ```bash
 npm run start
+```
+
+### Testing
+
+To perform tests, run the following command:
+
+```bash
+npm run test
+```
